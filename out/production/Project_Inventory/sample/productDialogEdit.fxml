@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<DialogPane xmlns:fx="http://javafx.com/fxml" fx:controller="sample.ProductDialogEdit" >
+    <content>
+        <GridPane hgap="10" vgap="10">
+            <Label text="Product Name" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="productField" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Label text="Quantity" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="quantityField" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Label text="Price" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="priceField" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+        </GridPane>
+    </content>
+</DialogPane>

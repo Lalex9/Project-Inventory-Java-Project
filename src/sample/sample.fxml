@@ -1,0 +1,31 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="15"
+          fx:id="startPane">
+    <ImageView GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.halignment="CENTER">
+        <image>
+            <Image url="file:data/guest-book.png"/>
+        </image>
+    </ImageView>
+    <Label text="Welcome to Project Inventory" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="CENTER">
+        <font>
+            <Font size="24"/>
+        </font>
+    </Label>
+    <Label text="           " GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.halignment="CENTER"/>
+    <Label fx:id="connectionStatus" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.halignment="CENTER"/>
+    <Button fx:id="connectButton" text="Connect" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.halignment="CENTER"
+            onAction="#connectToDb"/>
+    <Label text="           " GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.halignment="CENTER"/>
+    <HBox GridPane.rowIndex="6" GridPane.columnIndex="0" alignment="CENTER" spacing="20">
+        <Button fx:id="registerButton" text="Register" disable="true" onAction="#showRegisterDialog"/>
+        <Button fx:id="loginButton" text="Login" disable="true" onAction="#showLoginDialog"/>
+    </HBox>
+</GridPane>
